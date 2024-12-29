@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Legends - عالم الألعاب الأسطوري</title>
+    <style>
+        /* الأساسيات */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* الهيدر */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 0 #3c6f37;
+            font-family: 'Press Start 2P', sans-serif; /* الخط المخصص */
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #00ff88;
+        }
+
+        /* البطل */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1555705059-d0dfdecc49c6?fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            max-width: 600px;
+        }
+
+        .hero .btn {
+            background: linear-gradient(45deg, #00ff88, #0088ff);
+            color: #000;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #0088ff, #00ff88);
+        }
+
+        /* قسم المميزات */
+        .features {
+            padding: 5rem 2rem;
+            background: #121212;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            color: #00ff88;
+        }
+
+        .features .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #00ff88;
+        }
+
+        .card p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #0a0a0a;
+            padding: 2rem;
+            text-align: center;
+            color: #777;
+        }
+
+        footer a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* التأثيرات */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <div class="logo">Redzix</div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#features">مميزات</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- قسم البطل -->
+    <section id="home" class="hero">
+        <h1>مرحبًا بك في عالم الألعاب</h1>
+        <p>استعد للمغامرة، حيث تجد المتعة، التحدي، والإثارة في مكان واحد.</p>
+        <button class="btn">ابدأ الآن</button>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="features">
+        <h2>مميزات الموقع</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="ألعاب متنوعة">
+                <h3>ألعاب متنوعة</h3>
+                <p>استمتع بمجموعة واسعة من الألعاب المثيرة لتناسب ذوقك.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="مجتمع اللاعبين">
+                <h3>مجتمع اللاعبين</h3>
+                <p>شارك وتواصل مع مجتمع من عشاق الألعاب حول العالم.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="دعم متميز">
+                <h3>دعم متميز</h3>
+                <p>خدمة عملاء متوفرة دائمًا لضمان أفضل تجربة لعب.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>© 2024 Gaming Legends. جميع الحقوق محفوظة. <a href="#contact">تواصل معنا</a></p>
+    </footer>
+</body>
+</html>
