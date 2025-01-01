@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)file:///C:/Users/Potato/Documents/index.html -->
-<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="fr" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Legends - عالم الألعاب الأسطوري</title>
+    <title>redzix</title>
     <style>
         /* الأساسيات */
         * {
@@ -13,10 +12,11 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background: #1a1919;
-            color: #fff;
-            scroll-behavior: smooth;
+            font-family: 'Tajawal', sans-serif;
+        background-color: #121212; /* خلفية موحدة بدون تدرجات */
+        color: #fff;
+        scroll-behavior: smooth;
+        line-height: 1.6; /* تحسين قابلية القراءة */
         }
 
         /* الهيدر */
@@ -173,6 +173,73 @@
         footer a:hover {
             text-decoration: underline;
         }
+/* Basic gaming-style button */
+button {
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00; /* Gold text color for a more striking effect */
+    background-color: #038f2d; /* Bright blue background */
+    border: 3px solid #038f2d;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Retro pixelated font for gaming */
+}
+
+/* Glowing effect */
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.356));
+    animation: glow 1.5s infinite alternate;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* Hover effect with scaling and glowing */
+button:hover {
+    background-color: #1aff38; /* Bright orange/red */
+    border-color: #1aff38;
+    transform: scale(1.1); /* Scale up for emphasis */
+
+    color: #ffffff; /* Change text color to white when hovered */
+}
+
+/* Focus effect with glow */
+button:focus {
+    outline: none;
+
+}
+
+/* Active effect for "press" effect */
+button:active {
+    transform: scale(0.98); /* Slight shrink effect */
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+/* Glowing animation */
+@keyframes glow {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+}
+
 
         /* التأثيرات */
         @keyframes fadeIn {
@@ -234,17 +301,19 @@
 
     <!-- قسم المميزات -->
     <section id="features" class="features">
-        <h2>مميزات الموقع</h2>
+           <h2>&nbsp;</h2>
         <div class="cards">
             <div class="card">
-                <img src="./Gaming Legends - عالم الألعاب الأسطوري_files/300x200" alt="ألعاب متنوعة">
-                <h3>ألعاب متنوعة</h3>
-                <p>استمتع بمجموعة واسعة من الألعاب المثيرة لتناسب ذوقك.</p>
+                <img src="https://wallpapercave.com/wp/wp13935943.jpg" alt="ألعاب متنوعة">
+                <h3>Blood Strike</h3>
+                
+                <button><a href="https://adl.netease.com/d/g/bloodstrike/c/pc">dowload</a></button>
             </div>
             <div class="card">
-                <img src="./Gaming Legends - عالم الألعاب الأسطوري_files/300x200" alt="مجتمع اللاعبين">
-                <h3>مجتمع اللاعبين</h3>
-                <p>شارك وتواصل مع مجتمع من عشاق الألعاب حول العالم.</p>
+                <img src="https://kaartdirect.be/storage/thumbnails/default/1e/g0/9glsmjeso80sg4koccc4s.png?p=kaartdirect.be%2Fimages%2Fplatforms%2Fgaming-roblox-banner-1676878686.png&s=https&widen=1000">
+                <h3>Roblox</h3>
+                
+                <button><a href="https://adl.netease.com/d/g/bloodstrike/c/pc">dowload</a></button>
             </div>
             <div class="card">
                 <img src="./Gaming Legends - عالم الألعاب الأسطوري_files/300x200" alt="دعم متميز">
@@ -256,7 +325,7 @@
 
     <!-- الفوتر -->
     <footer>
-        <p>© 2024 Gaming Legends. جميع الحقوق محفوظة. <a href="file:///C:/Users/Potato/Documents/index.html#contact">تواصل معنا</a></p>
+        <p>© 2025 Redzix<a href="file:///C:/Users/Potato/Documents/index.html#contact">&nbsp;&nbsp;تواصل معنا</a></p>
     </footer>
 
 
